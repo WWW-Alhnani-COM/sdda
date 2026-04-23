@@ -112,11 +112,8 @@
         }
 
         .apple-pay-box {
-            border: 2px solid #2ecc71; /* الإطار الأخضر كما في الصورة */
-            border-radius: 6px;
-            padding: 4px 8px;
-            display: flex;
-            align-items: center;
+          height: 10px;
+            opacity: 0.8;
         }
 
         .btn-pay {
@@ -205,9 +202,9 @@
         <img src="Visa_Inc._logo.png" alt="Visa">
         <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
         <img src="madaLogo.png" alt="Mada" style="height:15px">
-        <div class="apple-pay-box">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay">
-        </div>
+        
+            <img class="apple-pay-box" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay">
+        
     </div>
     
     <button class="btn-pay" onclick="handleCardPayment()">
