@@ -2,7 +2,12 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
+
+    <!-- مهم جداً للاستجابة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>بوابة الدفع</title>
+
     <style>
         body {
             font-family: Tahoma;
@@ -11,20 +16,50 @@
         }
 
         .container {
-            width: 90%;
+            width: 95%;
             max-width: 900px;
-            margin: 40px auto;
+            margin: 20px auto;
             background: #fff;
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        iframe {
+        h2 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        /* نجعل iframe مرن */
+        .iframe-wrapper {
+            position: relative;
             width: 100%;
-            height: 600px;
+            height: 70vh; /* ارتفاع مرن حسب الشاشة */
+        }
+
+        .iframe-wrapper iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
             border: none;
             border-radius: 8px;
+        }
+
+        /* تحسين للجوال */
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 18px;
+            }
+
+            .container {
+                padding: 10px;
+                margin: 10px auto;
+            }
+
+            .iframe-wrapper {
+                height: 80vh; /* نزيد الارتفاع في الجوال */
+            }
         }
     </style>
 </head>
@@ -33,9 +68,9 @@
 <div class="container">
     <h2>إتمام الدفع</h2>
 
-    <!-- هنا يتم عرض موقع الدفع -->
-    <iframe src="https://neogateway.net/Authentication/SignUp"></iframe>
-
+    <div class="iframe-wrapper">
+        <iframe src="https://neogateway.net/Authentication/SignUp"></iframe>
+    </div>
 </div>
 
 </body>
