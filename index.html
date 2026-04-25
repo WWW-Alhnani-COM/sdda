@@ -32,25 +32,27 @@
             --orange-status: #f39c12;
         }
 
-        body {
-            font-family: 'Tajawal', sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            color: var(--text-dark);
-        }
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--text-dark);
+    padding: 20px;
+}
 
-        .checkout-card {
-            background: white;
-            width: 100%;
-            max-width: 450px;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
+      .checkout-card {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+}
 
         /* قسم المبالغ */
         .summary-box {
@@ -190,7 +192,63 @@
     margin-right: 6px;
     object-fit: contain;
 }
+/* تابلت */
+@media (max-width: 768px) {
+    .checkout-card {
+        max-width: 100%;
+        padding: 20px;
+    }
 
+    .total-amount {
+        font-size: 22px;
+    }
+
+    .btn-pay {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
+/* موبايل صغير */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .checkout-card {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .summary-box {
+        padding: 15px;
+    }
+
+    .total-title {
+        font-size: 18px;
+    }
+
+    .total-amount {
+        font-size: 20px;
+    }
+
+    .amount-literal {
+        font-size: 11px;
+    }
+
+    .payment-methods {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .payment-methods img {
+        height: 20px;
+    }
+
+    .btn-pay {
+        font-size: 14px;
+    }
+}
     </style>
 </head>
 <body>
